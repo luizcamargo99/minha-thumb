@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>minha thumb | veja como sua thumb vai ficar antes de postar</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="./assets/images/logo.png" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img
+          src="./assets/images/logo.png"
+          alt="Logotipo do minha thumb"
+          width="60"
+        />
+        <h1 style="font-size: 40px">minha thumb</h1>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h2 style="font-size: 35px; text-align: center">
+          Teste como sua Thumbnail vai ficar antes de postar seu vídeo no
+          <mark> YouTube</mark>
+        </h2>
+        <img
+          src="./assets/images/sample-thumb.png"
+          alt="Thumbnail de exemplo"
+          id="sample-image"
+        />
+        <form id="form-info">
+          <div class="input-container">
+            <label for="image-field"
+              >Faça o Upload da sua Thumb
+              <span class="required-ic"> *</span></label
+            >
+            <input type="file" id="image-field" required accept="image/*" />
+          </div>
+          <div class="input-container">
+            <label for="title-field"
+              >Digite o seu Título <span class="required-ic"> *</span></label
+            >
+            <input type="text" id="title-field" required />
+          </div>
+          <div class="input-container">
+            <label for="channel-name-field">Digite o nome do seu Canal</label>
+            <input type="text" id="channel-name-field" />
+          </div>
+          <div class="input-container">
+            <label for="profile-image-url-field"
+              >Coloque aqui a URL da Foto de Perfil do seu Canal</label
+            >
+            <input type="text" id="profile-image-url-field" />
+          </div>
+          <input type="submit" value="Analisar Thumb 💡" />
+        </form>
+        <div id="preview-container">
+          <h2>Navegador</h2>
+          <div class="section-preview">
+            <div class="preview-ctn">
+              <h4>Página Inicial</h4>
+              <img
+                src="./assets/images/sample-thumb.png"
+                alt="Thumbnail Página Inicial Grande"
+                width="360"
+                height="205"
+                class="thumb-preview"
+              />
+              <div class="footer-preview">
+                <img
+                  src="./assets/images/logo.png"
+                  alt="Foto de Perfil"
+                  class="profile-36"
+                />
+                <div class="text-preview" style="width: 265px">
+                  <p class="title-preview" style="font-size: 15px">
+                    Aqui vai o seu título de maneira dinâmica
+                  </p>
+                  <p class="channel-name-preview" style="font-size: 14px">
+                    Nome do Canal
+                  </p>
+                  <p style="font-size: 14px" class="views-preview">
+                    26 mil visualizações • há 13 horas
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2>Celular</h2>
+          <div class="section-preview" style="width: 320px">
+            <div class="preview-ctn">
+              <h4>Página Inicial</h4>
+              <img
+                src="./assets/images/sample-thumb.png"
+                alt="Thumbnail Página Inicial Grande"
+                width="320"
+                height="180"
+                class="thumb-preview"
+              />
+              <div class="footer-preview">
+                <img
+                  src="./assets/images/logo.png"
+                  alt="Foto de Perfil"
+                  class="profile-36"
+                />
+                <div class="text-preview">
+                  <p class="title-preview" style="font-size: 15px">
+                    Aqui vai o seu título de maneira dinâmica
+                  </p>
+                  <p class="channel-name-preview" style="font-size: 14px">
+                    Nome do Canal
+                  </p>
+                  <p style="font-size: 14px" class="views-preview">
+                    26 mil visualizações • há 13 horas
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        © <span id="year"></span> – Desenvolvido por
+        <a href="https://www.youtube.com/@CanalDevZito/" target="_blank">
+          DevZito</a
+        >
+      </p>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
